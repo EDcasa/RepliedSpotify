@@ -8,7 +8,7 @@ const routes: Routes = [
     component:LoginPageComponent
   },
   {
-    path:'**',
+    path:'**', //TODO: cuando no existe la ruta redirecciono directamente a una por defecto
     redirectTo:'/auth/login'
   }
 ];

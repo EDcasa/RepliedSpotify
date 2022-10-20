@@ -11,7 +11,9 @@ export class CardPlayerComponent implements OnInit {
 
   @Input() track!:TrackModel;
   @Input() mode!:string;
-  constructor(private _multimediaService:MultimediaService) { }
+  constructor(
+    private _multimediaService:MultimediaService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +23,8 @@ export class CardPlayerComponent implements OnInit {
   }
 
   sendPlay(track:TrackModel):void{
+    //suscribe  para escuchar
+    //emit para emitir
     this._multimediaService.callback.emit(track);
   }
 }

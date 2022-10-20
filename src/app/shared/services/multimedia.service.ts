@@ -5,6 +5,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 })
 export class MultimediaService {
 
+  //emite eventos
   callback: EventEmitter<any> = new EventEmitter<any>()
   constructor() { 
     
